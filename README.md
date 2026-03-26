@@ -32,9 +32,9 @@ This mode is built upon the Basic Dimmer but uses multiple potentiometers with m
 ---
 
 ## How to run
-I ran this code on a WeAct Studio esp32c3 board which gave me issues with the serial monitor not working. I fixed the serial monitor issue by ensuring that USB CDC is enabled.
+I ran this code on a WeAct Studio ESP32-C3 board which gave me issues with the serial monitor not working. I fixed the serial monitor issue by ensuring that USB CDC is enabled.
 
-If using the Arduino IDE, make sure the WeAct Studio esp32c3 board is the correct selected one.
+If using the Arduino IDE, make sure the WeAct Studio ESP32-C3 board is the correct selected one.
 
 If running the script in CLI, it will prompt you for your board's serial port that it is connected to, so you need to find it and mention it. The serial port is usually /dev/ttyACM0 or /dev/ttyUSB0 but it could also be different. If the shell script is not executable, simply chmod it.
 
