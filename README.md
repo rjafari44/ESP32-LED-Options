@@ -1,4 +1,4 @@
-# ESP32_LIGHT
+# ESP32 LIGHT
 
 #### This project was derived from the IEEE Student Branch at UCI. This code consists of three modes: LED Blink, Basic Dimmer, and RGB Dimmer. Each mode has a different design needed to run. I have created my own schematics within LTspice with custom symbols, so feel free to follow them for an exact setup or change them according to your need. The LTspice files are provided in the project.
 
