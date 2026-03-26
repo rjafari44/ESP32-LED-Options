@@ -31,7 +31,7 @@ This mode is built upon the Basic Dimmer but uses multiple potentiometers with m
 
 ---
 
-## How to run
+## Usage
 I ran this code on a WeAct Studio ESP32-C3 board which gave me issues with the serial monitor not working. I fixed the serial monitor issue by ensuring that USB CDC is enabled.
 
 If using the Arduino IDE, make sure the WeAct Studio ESP32-C3 board is the correct selected one.
