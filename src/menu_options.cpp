@@ -1,4 +1,4 @@
-#include "myheader.h"
+#include "common.h"
 #include <Arduino.h>
 
 // function to display the menu, returns nothing

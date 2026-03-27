@@ -1,25 +1,26 @@
-#include "myheader.h"
+#include "common.h"
 #include <Arduino.h>
 
 // global variable declaration, made to only be used within this file
-const int pinLED{10};
-const int potReadPin{4};
-static int potValue{};
-static int brightness{};
-static char input{};
+constexpr int PIN_LED{10};
+constexpr int POT_READ_PIN{4};
 
 // function to set the pin to be used, returns nothing
 void dimLED_setup() {
-    pinMode(pinLED, OUTPUT); 
+    pinMode(PIN_LED, OUTPUT); 
     Serial.println("\n*** Basic Dimmer Mode ***");
     Serial.println("LED is ready to be controlled by potentiometer. Type 'm' or 'M' + Enter to return to mode menu");
 }
 
 // function to perform the dimmer program, returns nothing
 void dimLED_loop() {
-    potValue = analogRead(potReadPin);   // store the analog value read from the potentiometer between 0 - 4095
+    int potValue{};
+    int brightness{};
+    char input{};
+
+    potValue = analogRead(POT_READ_PIN);   // store the analog value read from the potentiometer between 0 - 4095
     brightness = potValue / 16;          // divide the stored value by 16 to get it within a 0-255 for PWM
-    analogWrite(pinLED, brightness);     // set the LED brightness to the calculated number
+    analogWrite(PIN_LED, brightness);     // set the LED brightness to the calculated number
 
     if (Serial.available() > 0) {        // If a character is waiting in the Serial input buffer, read it
         input = Serial.read();
