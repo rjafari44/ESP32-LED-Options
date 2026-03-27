@@ -9,7 +9,7 @@ A simple LED blinking mode which has the light flicker on and off once every sec
 
 #### Circuit Schematic:
 
-![Diagram](assets/Mode_Blink.jpg)
+![Diagram](assets/mode_blink.jpg)
 
 ---
 
@@ -18,7 +18,7 @@ This mode uses a potentiometer to control the brightness of the LED from 0% to 1
 
 #### Circuit Schematic:
 
-![Diagram](assets/Mode_Basic_Dimmer.jpg)
+![Diagram](assets/mode_basic_dimmer.jpg)
 
 ---
 
@@ -27,7 +27,7 @@ This mode is built upon the Basic Dimmer but uses multiple potentiometers with m
 
 #### Circuit Schematic:
 
-![Diagram](assets/Mode_RGB_Dimmer.jpg)
+![Diagram](assets/mode-rgb_dimmer.jpg)
 
 ---
 
