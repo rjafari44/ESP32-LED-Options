@@ -1,5 +1,4 @@
 #include "common.h"
-#include <Arduino.h>
 
 // global variable declaration, made to only be used within this file
 constexpr int PIN_LED{10};

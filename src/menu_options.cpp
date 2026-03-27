@@ -1,5 +1,4 @@
 #include "common.h"
-#include <Arduino.h>
 
 // function to display the menu, returns nothing
 void showMenu() {

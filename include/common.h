@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Arduino.h>
+
 // enum type
 enum Menu { MENU, BLINK, DIM_BASIC, DIM_RGB };
 
